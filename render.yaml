@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: excalidraw-app
+    env: docker
+    repo: https://github.com/devak208/excalidraw
+    branch: main
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
